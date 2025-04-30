@@ -13,9 +13,7 @@ Este projeto demonstra a implementação da Clean Architecture em uma aplicaçã
 - SQL Server
 - Swagger (Swashbuckle)
 - AutoMapper
-- FluentValidation
-- MediatR (opcional)
-- Angular (para o front-end)
+- UseInMemoryDatabase
 
 ---
 
@@ -23,7 +21,10 @@ Este projeto demonstra a implementação da Clean Architecture em uma aplicaçã
 
 A estrutura segue os princípios da **Clean Architecture**, separando responsabilidades em camadas distintas:
 
-src/ │ ├── Domain/ → Entidades e interfaces de repositórios ├── Application/ → Casos de uso (UseCases), DTOs e interfaces ├── Infrastructure/ → Implementações de repositórios, DbContext, Migrations ├── API/ → Controllers, injeção de dependência, configuração
+|── Domain/ → Entidades e interfaces de repositórios 
+├── Application/ → Casos de uso (UseCases), DTOs e interfaces 
+├── Infrastructure/ → Implementações de repositórios, DbContext, Migrations 
+├── API/ → Controllers, injeção de dependência, configuração
 
 
 - **Domain**: regras de negócio puras (Enterprise Business Rules)
